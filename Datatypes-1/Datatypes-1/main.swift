@@ -41,12 +41,12 @@ Semicolon()
 
 
 
-func WhiteSpace (_ nm1:String,nm2:String) -> String
+func WhiteSpace (nm1:String,nm2:String) -> String
 {
     let nm = nm1 + nm2
     return nm
 }
-print (WhiteSpace(nm1: "Chintan", nm2: " Ladani"), "\n")
+print(WhiteSpace(nm1:"Chintan",nm2:"Ladani"), "\n")
 
 
 
@@ -114,7 +114,7 @@ DataType()
 
 
 
-/*----------------------------------FOR BOUND VALUE----------------------------------*/
+/*----------------------------------FOR BOUNDVALUE----------------------------------*/
 
 
 
@@ -135,21 +135,61 @@ BoundValue()
 
 
 
-/*----------------------------------FOR ALIASES----------------------------------*/
+/*----------------------------------FOR STRING----------------------------------*/
 
 
 
 
-func aliases()
-{
-    var v1 = 12
+
+func String(){
+    let chi1 = "hello"
     
-
+    if chi1.isEmpty
+    {
+        print (" String is empty \n")
+    }
+    else{
+        print ("String is \(chi1)")
+    }
 }
 
+String()
 
 
+/*----------------------------------FOR LOOPS---------------------------------*/
+
+var phone = ["oppo","sayymsung","vivo","MI","iphone"]
+for chi in phone
+{
+    print ("i am :\(chi)")
+}
+
+/*----------------------------------CHARECTER---------------------------------*/
 
 
+func character()
+    
+{
+    let ch1	: Character = "a"
+    print(ch1)
+}
+character()
+
+
+/*----------------------------------CHARECTER Append---------------------------------*/
+
+
+func c1()
+{
+    var chi : Character = "H"
+    var ch : String = "I am Chintan"
+    ch.append( chi )
+    
+    print(ch)
+}
+c1()
+
+
+/*----------------------------------CHARECTER Append---------------------------------*/
 
 
