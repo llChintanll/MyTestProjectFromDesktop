@@ -155,10 +155,17 @@ func String(){
 
 String()
 
-
+func string1()
+{
+    let str : String = "hello"
+    let str2 : String = "chintan"
+   let str3 = str + str2
+    print(str3)
+}
+string1()
 /*----------------------------------FOR LOOPS---------------------------------*/
 
-var phone = ["oppo","sayymsung","vivo","MI","iphone"]
+var phone = ["oppo","samsung","vivo","MI","iphone"]
 for chi in phone
 {
     print ("i am :\(chi)")
@@ -176,7 +183,7 @@ func character()
 character()
 
 
-/*----------------------------------CHARECTER Append---------------------------------*/
+/*----------------------------------CHARECTAppend---------------------------------*/
 
 
 func c1()
@@ -190,6 +197,23 @@ func c1()
 c1()
 
 
-/*----------------------------------CHARECTER Append---------------------------------*/
+/*--------------------------------Array-----------------------------------*/
+
+func Array()
+{
+    var c11 : [Int] = [10,20,30]
+    var c1 : [String] = ["chintan","Kishan"]
+    print(c11[0])
+    print(c1[0])
+    c1.append("montu")
+    print(c1)
+    
+    print(c11[1])
+}
+Array()
+
+
+
+/*--------------------------------Array-----------------------------------*/
 
 
