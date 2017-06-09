@@ -90,7 +90,7 @@ func DataType()
     let double : Double = 500.145
     print("Double value is : \(double)")
 
-/*----------------------------------FOR OPTIONAL----------------------------------*/
+/*----------------------------------FOR OPTIONAL--------------------------------*/
     
     
     let a : Int? = nil
@@ -214,6 +214,21 @@ Array()
 
 
 
-/*--------------------------------Array-----------------------------------*/
+/*--------------------------------Closures-----------------------------------*/
 
 
+
+let names = ["Cherry", "Apple", "Banana", "Mango", "Berry"]
+
+func backward(_ s1: String, _ s2: String) -> Bool
+{
+    return s1 > s2
+}
+var reversedNames = names.sorted(by: backward)
+print(reversedNames)
+
+reversedNames = names.sorted(by: { (s1: String, s2: String) -> Bool in
+    return s1 > s2
+})
+
+reversedNames = names.sorted(by: { (s1: String, s2: String) -> Bool in return s1 > s2 } )
